@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Static Interactive Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div id="container">
+    <!-- Profile Section -->
+    <div id="profile">
+      <div id="image">
+        <img id="profile-photo" src="asm.jpeg" alt="Profile photo of Asma Iqbal">
+        <a href="#"><i class="fas fa-pen stroke-transparent" aria-hidden="true"></i><span class="sr-only">Edit profile photo</span></a>
+      </div>
+      <h1>Asma Iqbal</h1>
+      <p id="designation">Frontend Developer</p>
+      <hr width="100%">
+      
+      <!-- About Me Section -->
+      <div id="about">
+        <h2>About Me</h2>                                          
+      </div>
+      <p id="phone">Contact me: 0333-12345786</p>
+      <p id="email">azeecreations1@gmail.com</p>
+    </div>
+    
+    <!-- Info Cards Section -->
+    <div id="info-cards">
+      <!-- Education Section -->
+      <section class="card">
+        <p><i class="fas fa-graduation-cap stroke-transparent" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<h2>Education</h2></p>
+        <div class="education-card">
+          <button id="edu-butn" name="edu-butn" aria-expanded="false" aria-controls="edu-detail">Show Education</button> 
+          <div id="edu-detail" style="display: none;">
+            <p><strong>Matriculation:</strong> Pakistan Air Force Base Masroor, Karachi</p>
+            <p><strong>Intermediate:</strong> Saleem Nawaz Fazaia College (Former PAF Masroor), Karachi</p>
+            <p><strong>Graduation:</strong> Jinnah University for Women</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="card">
+        <p><i class="fas fa-code stroke-transparent" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<h2>Skills</h2></p>
+        <div class="skill-card">
+          <button id="skills-butn" name="skills-butn" aria-expanded="false" aria-controls="skills-detail">Show Skills</button>
+          <ul id="skills-detail" style="display: none;">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="card">
+        <p><i class="fas fa-briefcase stroke-transparent" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<h2>Experience</h2></p>
+        <div class="experience-card">
+            <button id="exp-butn" aria-expanded="false" aria-controls="exp-detail">Show Experience</button>
+            <p id="exp-detail" style="display: none;">Enrolled in Governor Sindh Initiative IT Program</p>          
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Link to external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
